@@ -1,3 +1,65 @@
 h1 {
   color: grey;
+  font-size: 40px;
+  font-family: "verdana", serif;
+  font-weight: normal;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  text-align: center;
+}
+h2 {
+  color: grey;
+  font-size: 20px;
+  font-family: "verdana", serif;
+  font-weight: normal
+}
+h3 {
+  color: grey;
+  font-size: 20px;
+  font-family: "verdana", serif;
+  font-weight: normal
+}
+h4 {
+  color: grey;
+  font-size: 20px;
+  font-family: "verdana", serif;
+  font-weight: normal
+}
+body {
+  font-family: "verdana", serif;
+}
+
+p {
+  font-family: "verdana", serif;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  font-family: "verdana", serif;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+  font-family: "verdana", serif;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+article {
+  height: 300px;
+  width: 100%;
+  background-color: powderblue;
+  text-align: right;
+}
+footer {
+  padding: 10px;
 }
