@@ -1,8 +1,9 @@
+* {box-sizing: border-box; }
+* {font-family: 'Montserrat', sans-serif;}
 h1 {
   color: grey;
   font-size: 40px;
-  font-family: "verdana", serif;
-  font-weight: normal;
+  font-weight: bold;
   padding-bottom: 40px;
   padding-top: 40px;
   text-align: center;
@@ -10,41 +11,30 @@ h1 {
 h2 {
   color: grey;
   font-size: 20px;
-  font-family: "verdana", serif;
   font-weight: normal
 }
 h3 {
   color: grey;
   font-size: 20px;
-  font-family: "verdana", serif;
   font-weight: normal
 }
 h4 {
   color: grey;
   font-size: 20px;
-  font-family: "verdana", serif;
   font-weight: normal
-}
-body {
-  font-family: "verdana", serif;
-}
-
-p {
-  font-family: "verdana", serif;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #f3f3f3;
-  font-family: "verdana", serif;
 }
-
 li {
   float: left;
   border-right: 1px solid #bbb;
-  font-family: "verdana", serif;
+}
+li:last-child {
+  border-right: none;
 }
 
 li a {
@@ -54,12 +44,61 @@ li a {
   padding: 20px 40px;
   text-decoration: none;
 }
-article {
-  height: 300px;
-  width: 100%;
-  background-color: powderblue;
-  text-align: right;
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 footer {
-  padding: 10px;
+  clear: both;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 40px;
+  width: 300px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 40px;
+  width: 800px;
+}
+.clearfix::after {
+  content:"";
+  display: block;
+  clear: both;
+}
+.photo-grid-container {
+  display: flex;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.photo-grid-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 300px;
+  overflow: inherit;
+  margin: 25px;
+}
+.dessert {
+  color: #ff9999;
+  text-decoration: none;
 }
