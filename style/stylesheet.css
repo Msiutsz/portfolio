@@ -1,5 +1,6 @@
 * {box-sizing: border-box; }
 * {font-family: 'Montserrat', sans-serif;}
+* {line-height: 1.6;}
 h1 {
   color: grey;
   font-size: 40px;
@@ -29,7 +30,7 @@ ul {
   padding: 0;
   overflow: hidden;
 }
-li {
+.nav {
   float: left;
   border-right: 1px solid #bbb;
 }
@@ -98,7 +99,23 @@ footer {
   overflow: inherit;
   margin: 25px;
 }
+section a:hover {
+  color: grey;
+}
 .dessert {
   color: #ff9999;
   text-decoration: none;
+}
+.circle:hover {
+  border-radius:25%;
+}
+p {
+  padding: 0;
+  margin: 3px;
+}
+section ol li:nth-child(odd) {
+  color: green;
+}
+section ol li:nth-child(even) {
+  color: purple;
 }
