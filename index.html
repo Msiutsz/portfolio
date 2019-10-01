@@ -34,6 +34,58 @@
           <li>How long will it take to get our food?</li>
           <li>Are we ok with a full blown tantrum happening at this place?</li>
         </ol>
+        <h2>Sign up for our newsletter!</h2>
+
+          <form method="GET">
+            <label>Name:
+              <input type="text" name="applicantName">
+            </label>
+            <label>Email Address:
+              <input type="text" name"applicantContact">
+            </label>
+            <label>What are you interested in joining our newsletter?
+              <textarea name="applicantReason" rows="4" cols="50">
+              </textarea>
+            </label>
+            <fieldset>
+              <legend>How did you hear about us?</legend>
+              <label>
+                <input type="checkbox" name="type" value="mouth">
+                Word of mouth
+                <span class="checkmark"></span>
+              </label>
+              <label>
+                <input type="checkbox" name="type" value="social">
+                Social media
+                <span class="checkmark"></span>
+              </label>
+              <label>
+                <input type="checkbox" name="type" value="web">
+                Website
+                <span class="checkmark"></span>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Are you interested in a playdate?</legend>
+              <label>
+                <input type="radio" name="special" value="yes">
+                Yes
+              </label>
+              <label>
+                <input type="radio" name="special" value="no">
+                No
+              </label>
+            </fieldset>
+            <label>How often do you think about food?
+              <select name="hours">
+                <option value="">Please select</option>
+                <option value="few">When I'm hungry</option>
+                <option value="some">Every few hours</option>
+                <option value="many">I'm thinking about food right now</option>
+              </select>
+            </label>
+            <input type="submit" value="Sign Up">
+          </form>
       </article>
     </section>
 
